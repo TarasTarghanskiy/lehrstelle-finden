@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="contact-inner">
-        <div className="eyebrow"><span className="eyebrow-dot" />Kontakt</div>
+        <div className="eyebrow">Kontakt</div>
         <h2 className="contact-h2">Machen wir den ersten Schritt.</h2>
         <p className="contact-sub">
           Schreib mir unverbindlich — das erste Kennenlernen ist kostenlos.

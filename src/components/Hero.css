@@ -101,28 +101,31 @@
   position: relative;
 }
 
-.photo-accent {
-  position: absolute;
-  inset: 24px -18px -18px 24px;
-  background: var(--green);
-  border-radius: 30px;
-  z-index: 0;
+.photo-dashed-frame {
+  border: 1.5px dashed #b0b8a8;
+  border-radius: 28px;
+  padding: 14px;
 }
 
 .photo-card {
-  position: relative;
-  z-index: 1;
   width: 100%;
   height: 520px;
-  background: #c4d4c4;
-  border-radius: 30px;
+  background: var(--green);
+  border-radius: 22px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+}
+
+.photo-placeholder-icon {
+  color: #7a9a7a;
+  opacity: 0.7;
 }
 
 .photo-placeholder-label {
-  font-size: 14px;
+  font-size: 13px;
   color: #7a9a7a;
 }
 
@@ -148,9 +151,5 @@
 
   .photo-card {
     height: 360px;
-  }
-
-  .photo-accent {
-    inset: 16px -6px -6px 16px;
   }
 }

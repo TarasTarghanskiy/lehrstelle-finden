@@ -52,7 +52,7 @@ export default function Process() {
     <section id="process" className="process">
       <div className="process-inner">
         <div className="process-header">
-          <div className="eyebrow"><span className="eyebrow-dot" />Der Ablauf</div>
+          <div className="eyebrow">Der Ablauf</div>
           <h2 className="process-h2">Fünf Schritte, ein klarer Weg</h2>
           <p className="process-sub">Klicke auf einen Schritt für mehr Details.</p>
         </div>

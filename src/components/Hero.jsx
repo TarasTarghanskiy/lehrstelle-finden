@@ -28,9 +28,15 @@ export default function Hero() {
         </div>
 
         <div className="hero-right">
-          <div className="photo-accent" />
-          <div className="photo-card">
-            <span className="photo-placeholder-label">Foto von Lena</span>
+          <div className="photo-dashed-frame">
+            <div className="photo-card">
+              <svg className="photo-placeholder-icon" width="32" height="28" viewBox="0 0 32 28" fill="none">
+                <rect x="1" y="4" width="30" height="23" rx="3" stroke="currentColor" strokeWidth="1.5"/>
+                <circle cx="11" cy="13" r="3" stroke="currentColor" strokeWidth="1.5"/>
+                <path d="M1 22l7-7 5 5 4-4 8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <span className="photo-placeholder-label">Foto von Lena</span>
+            </div>
           </div>
         </div>
       </div>
