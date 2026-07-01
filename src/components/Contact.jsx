@@ -11,6 +11,7 @@ export default function Contact() {
   }
 
   return (
+    <>
     <section id="contact" className="contact">
       <div className="contact-inner">
         <div className="eyebrow">Kontakt</div>
@@ -43,11 +44,12 @@ export default function Contact() {
           <span className="contact-info-text">Zürich &amp; online</span>
         </div>
       </div>
-
-      <footer className="footer">
-        <span>© 2026 Lena Hofer — Berufscoaching</span>
-        <span>Zürich</span>
-      </footer>
     </section>
+
+    <footer className="footer">
+      <span>© 2026 Lena Hofer — Berufscoaching</span>
+      <span>Zürich</span>
+    </footer>
+    </>
   )
 }
