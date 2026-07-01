@@ -5,31 +5,40 @@
 }
 
 :root {
-  --bg: #f5f3ec;
-  --green: #4b7355;
-  --green-dark: #3a5a42;
-  --green-muted: #8fa98f;
-  --text: #1c1c1a;
-  --text-muted: #6b6b65;
-  --section-alt: #eae7dd;
-  --white: #ffffff;
-  --tag-bg: transparent;
-  --tag-border: #c5c9b8;
-  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --bg: #F3F1E9;
+  --bg-process: #ECEAE0;
+  --green: #4B7355;
+  --green-dark: #33503E;
+  --green-ring: rgba(75, 115, 85, 0.20);
+  --green-accent: #3C5844;
+  --green-muted: #9AA396;
+  --green-pill-bg: #E1E8DE;
+  --text: #232B25;
+  --text-body: #4C544D;
+  --text-muted: #556056;
+  --text-nav: #5C645D;
+  --text-sub: #77807A;
+  --text-step: #616a61;
+  --text-footer: #7C837C;
+  --border: #DCE0D0;
+  --border-process: #E1DFD3;
+  --border-input: #D6D9CD;
+  --border-footer: #E3E1D6;
+  --connector: #D2D6C6;
+  --dot-sep: #C4C7B9;
+  --card-bg: #F3F1E9;
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
+  --bp: 820px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
-  font-family: var(--font);
-  background-color: var(--bg);
+  font-family: var(--font-body);
+  background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-button, input {
-  font-family: var(--font);
-}
+button, input { font-family: var(--font-body); }
