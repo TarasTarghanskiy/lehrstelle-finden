@@ -1,0 +1,35 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f5f3ec;
+  --green: #4b7355;
+  --green-dark: #3a5a42;
+  --green-muted: #8fa98f;
+  --text: #1c1c1a;
+  --text-muted: #6b6b65;
+  --section-alt: #eae7dd;
+  --white: #ffffff;
+  --tag-bg: transparent;
+  --tag-border: #c5c9b8;
+  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, input {
+  font-family: var(--font);
+}
