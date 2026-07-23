@@ -3,12 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lena Hofer — Berufscoaching für Jugendliche</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Sagaled — Berufswahlbegleitung für Jugendliche</title>
+    <meta
+      name="description"
+      content="Sagaled begleitet Jugendliche und ihre Eltern persönlich, strukturiert und praxisnah durch die Berufswahl – von der Standortbestimmung bis zum erfolgreichen Einstieg. Raum Zürich & online."
+    />
+    <meta property="og:title" content="Sagaled — Berufswahl beginnt mit dir." />
+    <meta
+      property="og:description"
+      content="Persönliche Begleitung durch den Berufswahlprozess für Jugendliche und ihre Eltern."
+    />
+    <meta property="og:type" content="website" />
   </head>
   <body>
+    <!-- Hidden form so Netlify detects "kontakt" at build time (SPA forms aren't auto-detected). -->
+    <form name="kontakt" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="telefon" />
+      <textarea name="nachricht"></textarea>
+      <input name="bot-field" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

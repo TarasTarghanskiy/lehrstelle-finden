@@ -1,3 +1,5 @@
+@import './assets/fonts.css';
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -5,31 +7,35 @@
 }
 
 :root {
-  --bg: #F3F1E9;
-  --bg-process: #ECEAE0;
-  --green: #4B7355;
-  --green-dark: #33503E;
-  --green-ring: rgba(75, 115, 85, 0.20);
-  --green-accent: #3C5844;
-  --green-muted: #9AA396;
-  --green-pill-bg: #E1E8DE;
-  --text: #232B25;
-  --text-body: #4C544D;
-  --text-muted: #556056;
-  --text-nav: #5C645D;
-  --text-sub: #77807A;
-  --text-step: #616a61;
-  --text-footer: #7C837C;
-  --border: #DCE0D0;
-  --border-process: #E1DFD3;
-  --border-input: #D6D9CD;
-  --border-footer: #E3E1D6;
-  --connector: #D2D6C6;
-  --dot-sep: #C4C7B9;
-  --card-bg: #F3F1E9;
-  --font-display: 'Bricolage Grotesque', sans-serif;
-  --font-body: 'Work Sans', sans-serif;
-  --bp: 820px;
+  /* Sagaled brand */
+  --teal: #0F3D4A;        /* Vertrauen · Klarheit · Kompetenz */
+  --teal-hover: #0B2E38;
+  --teal-soft: #1B4E5C;
+  --sage: #88A383;        /* Wachstum · Orientierung · Potenzial */
+  --sage-dark: #6E8A69;
+  --light: #F2F4F2;       /* Leichtigkeit · Natürlichkeit */
+  --white: #FFFFFF;
+
+  --bg: var(--light);
+  --bg-white: #FBFCFB;
+
+  --text: #12333D;        /* headings, near-teal */
+  --text-body: #3E4F53;
+  --text-muted: #6E7D80;
+  --text-onteal: rgba(255, 255, 255, 0.86);
+  --text-onteal-soft: rgba(255, 255, 255, 0.62);
+
+  --pill-bg: #E5ECE3;     /* sage tint */
+  --pill-text: #4B6A4E;
+  --border: #D9E1DB;
+  --border-soft: #E4E9E3;
+
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --maxw: 1180px;
+  --bp: 860px;
+  --radius: 18px;
 }
 
 html { scroll-behavior: smooth; }
@@ -39,6 +45,48 @@ body {
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-button, input { font-family: var(--font-body); }
+button, input, textarea, select { font-family: var(--font-body); }
+
+/* Shared building blocks */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+}
+.eyebrow-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--sage);
+  flex-shrink: 0;
+}
+.eyebrow--onteal { color: #A9C3A4; }
+.eyebrow--onteal .eyebrow-dot { background: #A9C3A4; }
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--teal);
+  text-decoration: none;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+.btn-primary:hover { background: var(--teal-hover); transform: translateY(-1px); }

@@ -1,0 +1,122 @@
+.pricing {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 88px 40px;
+}
+
+.pricing-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.pricing-h2 {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-top: 16px;
+}
+
+.pricing-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-body);
+  max-width: 500px;
+  margin-top: 18px;
+}
+
+.pricing-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 32px;
+  margin-top: 30px;
+}
+
+.pricing-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--text-body);
+}
+
+.pricing-check {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--pill-bg);
+  color: var(--sage-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-card {
+  background: var(--teal);
+  border-radius: 24px;
+  padding: 40px 38px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 30px 70px -34px rgba(15, 61, 74, 0.6);
+}
+
+.pricing-card-label {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-onteal-soft);
+  text-transform: uppercase;
+}
+
+.pricing-price {
+  font-family: var(--font-display);
+  font-size: 54px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-top: 14px;
+  line-height: 1;
+}
+.pricing-price span {
+  font-size: 30px;
+  font-weight: 600;
+  vertical-align: baseline;
+}
+
+.pricing-free {
+  font-size: 15px;
+  color: var(--text-onteal);
+  margin-top: 16px;
+}
+
+.pricing-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 26px;
+  padding: 15px 24px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--teal);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+.pricing-cta:hover { transform: translateY(-1px); background: #EAF0E9; }
+
+@media (max-width: 860px) {
+  .pricing { padding: 56px 20px; }
+  .pricing-inner { grid-template-columns: 1fr; gap: 36px; }
+  .pricing-h2 { font-size: 30px; }
+  .pricing-text { font-size: 16.5px; }
+  .pricing-list { grid-template-columns: 1fr; }
+  .pricing-card { padding: 34px 26px; }
+}
